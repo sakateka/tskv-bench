@@ -31,3 +31,6 @@ printf "\x1b[36;1m   >>> awk:  \x1b[0m"
 echo
 printf "\x1b[36;1m   >>> c++:  \x1b[0m"
 clang++ -std=c++11 -O3 -o tskv-cc tskv-cc.cc && { /usr/bin/time -f "$fmt" ./tskv-cc; }|sum
+
+
+hyperfine --warmup 1 -L exe ./tskv-c,tskv-rs/target/release/tskv-rs,./tskv-go,./tskv-awk.sh,./tskv-cc '{exe}'
