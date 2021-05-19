@@ -13,3 +13,5 @@ In [10]: %timeit -n 15 subprocess.run(["./tskv-rs/target/release/tskv-rs"], stdo
 In [11]: %timeit -n 15 subprocess.run(["./tskv-c"], stdout=open(os.devnull))
 356 ms ± 5.38 ms per loop (mean ± std. dev. of 7 runs, 15 loops each)
 ```
+
+![tskv-bench-2021-05-19_10-29](https://user-images.githubusercontent.com/2256154/118752439-49069600-b88d-11eb-8611-56515e382616.png)
