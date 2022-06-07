@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["Sergey Kacheev <uo0@ya.ru>"]
 
 [dependencies]
-regex = "0.2"
+regex = "1.5.5"
 memchr = { version = "1.0", default-features = false }
 
 [profile.release]
